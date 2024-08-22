@@ -29,9 +29,11 @@ The dataset used for this project is synthetically generated. It can be found in
 ![relationship between study hours and score](images/download.png)
 
 **Model Training**
+
 The model was trained using PyTorch with L1Loss function and ADAM optimizer. The data was split into train and test by the ratio 4:1 where the number of hours studied is taken as features and score is taken as label.
 
 **Model Evaluation**
+
 The performance of the model is evaluated using the R-squared (R2) score, which provides insights into how well the model fits the data. The R2 score ranges from 0 to 1, with a higher score indicating a better fit. In this project, the R2 score is 0.95, demonstrating the model's capability to predict scores based on study hours.
 
 ![train test split](images/traintest.png)
@@ -42,9 +44,11 @@ The performance of the model is evaluated using the R-squared (R2) score, which 
 This loss curve indicate that the model is stablized
 
 # Usage
+
 The model was saved using pyTorch's save method which saves models in pickle format. It can be easily accessed using pyTorch's load method
 
 **How to Load and Use the Saved Model**
+
 After downloading the saved model file (student_scores_model.pth), you can load it in PyTorch and use it to make predictions. Follow the steps below:
 
 1. Install PyTorch:
